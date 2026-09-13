@@ -1,0 +1,39 @@
+﻿# Python / uv
+.venv/
+.uv-cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+
+# User exports, runtime state, downloads, and cached pages
+data/
+manual-downloads/
+*.csv
+*.csv.*.bak
+*.sqlite3
+*.sqlite3-*
+*.html
+*.htm
+*_files/
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.bak

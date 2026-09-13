@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "RYM Tab Companion",
+  "version": "1.1.0",
+  "description": "Close crawler-owned tabs only after Python confirms successful import.",
+  "permissions": ["storage", "alarms"],
+  "host_permissions": ["http://127.0.0.1/*", "https://rateyourmusic.com/*"],
+  "background": {"service_worker": "background.js"},
+  "content_scripts": [{
+    "matches": ["https://rateyourmusic.com/*"],
+    "js": ["content.js"],
+    "run_at": "document_start"
+  }]
+}
